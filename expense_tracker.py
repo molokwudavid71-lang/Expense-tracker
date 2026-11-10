@@ -5,7 +5,7 @@ FILENAME = "expenses.json"
 def load_expenses():
     try:
         with open(FILENAME,"r") as file:
-            json.loads(file)
+            json.load(file)
     except FileNotFoundError:
         return []
 def save_expenses():
